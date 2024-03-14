@@ -415,7 +415,7 @@ class TradeData(KucoinFuturesBaseRestApi):
 
         return self._request('POST', '/api/v1/orders', params=params)
     
-    def close_position(self, symbol, **kwargs):
+    def close_position(self, symbol, clientOid='', **kwargs):
         """
         Close Position Function
 
